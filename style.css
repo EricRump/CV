@@ -24,7 +24,11 @@ h4 {
 header {
   padding: 48px 16px;
   text-align: center;
-  background-color: green;
+  background-color: mediumaquamarine;
+}
+
+main header {
+  background-color: #aaa;
 }
 
 .main {
