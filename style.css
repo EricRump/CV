@@ -37,24 +37,32 @@ main {
   padding: 16px;
 }
 
-.main > * {
+main > * + * {
+  margin-top: 48px;
+}
+
+main > * {
   border-top: 2px solid black;
 }
 
-.nav-link {
+main > *:first-child {
+  border-top: none;
+}
+
+a {
   padding: 4px 8px;
   color: black;
 }
 
-.nav-link:hover {
+a:hover {
   color: red;
   background-color: black;
 }
 
-.nav-link:active {
+a:active {
   color: yellowgreen;
 }
 
-.nav-link + .nav-link {
+a + a {
   margin-left: 16px;
 }
