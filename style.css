@@ -17,7 +17,7 @@ h4 {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.body {
+body {
   padding: 20px;
 }
 
@@ -31,8 +31,30 @@ main header {
   background-color: #aaa;
 }
 
-.main {
+main {
   max-width: 800px;
   margin: 0 auto;
   padding: 16px;
+}
+
+.main > * {
+  border-top: 2px solid black;
+}
+
+.nav-link {
+  padding: 4px 8px;
+  color: black;
+}
+
+.nav-link:hover {
+  color: red;
+  background-color: black;
+}
+
+.nav-link:active {
+  color: yellowgreen;
+}
+
+.nav-link + .nav-link {
+  margin-left: 16px;
 }
