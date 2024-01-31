@@ -18,18 +18,19 @@ h4 {
 header {
   padding: 48px 16px;
   text-align: center;
-  background-color: mediumaquamarine;
+  background-color: yellowgreen;
 }
 
 main header {
-  background-color: #aaa;
+  background-color: beige;
   padding: 5px;
 }
 
 main {
   max-width: 800px;
-  margin: 0 auto;
+  margin: auto;
   padding: 16px;
+  background-image: linear-gradient(to bottom, gainsboro 0%, silver 60%);
 }
 
 main > * + * {
@@ -43,7 +44,7 @@ a {
 }
 
 a:hover {
-  color: red;
+  color: yellowgreen;
   background-color: black;
 }
 
