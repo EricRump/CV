@@ -1,13 +1,11 @@
 * {
   box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
 }
 
 body {
   margin: 0px;
-}
-
-* {
-  font-family: "Roboto", sans-serif;
+  padding: 20px;
 }
 
 h1,
@@ -15,10 +13,6 @@ h2,
 h3,
 h4 {
   font-family: Arial, Helvetica, sans-serif;
-}
-
-body {
-  padding: 20px;
 }
 
 header {
@@ -29,6 +23,7 @@ header {
 
 main header {
   background-color: #aaa;
+  padding: 5px;
 }
 
 main {
@@ -39,14 +34,7 @@ main {
 
 main > * + * {
   margin-top: 48px;
-}
-
-main > * {
   border-top: 2px solid black;
-}
-
-main > *:first-child {
-  border-top: none;
 }
 
 a {
@@ -65,4 +53,19 @@ a:active {
 
 a + a {
   margin-left: 16px;
+}
+
+h1::before {
+  content: "😎";
+  padding-right: 50px;
+}
+
+h1::after {
+  content: "🌴";
+  padding-left: 50px;
+}
+
+::selection {
+  background-color: black;
+  color: white;
 }
