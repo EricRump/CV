@@ -70,3 +70,12 @@ h1::after {
   background-color: black;
   color: white;
 }
+
+.soft-skills {
+  border: 3px, solid black;
+  display: inline-block;
+}
+.technical-skills {
+  border: 3px, solid black;
+  display: inline-block;
+}
