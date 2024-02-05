@@ -73,16 +73,23 @@ h1::after {
   font-size: 0.5em;
 }
 
+#skills {
+  display: flex;
+  justify-content: center;
+}
+
 .soft-skills {
   border: 0.2rem solid black;
-  display: inline-block;
-  width: 40%;
+  width: 600px;
+  margin-top: 5rem;
+  margin-right: 3rem;
+  padding: 1rem;
 }
 .technical-skills {
-  border: 3px solid black;
-  display: inline-block;
-  width: 40%;
-  margin: 2rem;
+  border: 0.2rem solid black;
+  width: 600px;
+  margin-top: 5rem;
+  padding: 1rem;
 }
 
 .hire-me {
@@ -95,18 +102,37 @@ h1::after {
   padding: 10px;
 }
 
+.navigation-links {
+  display: flex;
+  justify-content: space-around;
+}
+
+#experience h3 {
+  display: flex;
+  justify-content: center;
+}
+
 @media print {
   .navigation-links .hire-me {
     display: none;
   }
 }
 
-@media screen and (min-width: 786px) {
+@media screen and (min-width: 768px) {
   html {
-    font-size: 120%;
+    font-size: 80%;
   }
   main article {
     margin-top: 3em;
+  }
+  .navigation-links {
+    display: flex;
+    flex-direction: row;
+  }
+  #experience h3 {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
   }
 }
 @media screen and (min-width: 992px) {
