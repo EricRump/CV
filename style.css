@@ -2,6 +2,8 @@
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
   --header-color: beige;
+  --main-header-color1: yellow;
+  --main-header-color2: yellowgreen;
 }
 
 h1,
@@ -17,7 +19,14 @@ header {
 }
 
 .main-header {
-  background-image: linear-gradient(yellow, yellowgreen);
+  background-image: linear-gradient(
+    var(--main-header-color1),
+    var(--main-header-color2)
+  );
+}
+
+.main-header:focus-within .hire-me {
+  transform: scale(1.5);
 }
 
 main header {
@@ -43,12 +52,18 @@ a {
 }
 
 a:hover {
-  color: yellowgreen;
+  color: var(--main-header-color2);
   background-color: black;
+  transition: background-color 1s;
 }
 
 a:active {
-  color: yellowgreen;
+  color: var(--main-header-color2);
+}
+
+.nav-link:focus {
+  background-color: var(--main-header-color2);
+  transition: background-color 1s;
 }
 
 a + a {
@@ -104,12 +119,16 @@ h1::after {
 
 .hire-me {
   background-color: gold;
-  font-size: 2em;
-  width: fit-content;
-  position: fixed;
-  top: 16px;
-  right: 16px;
-  padding: 10px;
+  font-size: 1rem;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  padding: 0.5rem;
+  transition: transform 1s;
+}
+
+.main-header:hover .hire-me {
+  transform: scale(1.5);
 }
 
 .navigation-links {
@@ -123,7 +142,13 @@ h1::after {
 }
 
 footer {
-  background-color: darkgray;
+  background-image: linear-gradient(
+    to bottom,
+    var(--main-header-color1),
+    var(--main-header-color2)
+  );
+  text-align: center;
+  padding: 1rem;
 }
 
 @media print {
