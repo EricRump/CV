@@ -6,6 +6,43 @@
   --main-header-color2: yellowgreen;
 }
 
+@media print {
+  .navigation-links .hire-me {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  html {
+    font-size: 80%;
+  }
+  main article {
+    display: grid;
+    grid-template-columns: 1fr 1fr auto;
+    margin-top: 3em;
+  }
+  .navigation-links {
+    display: flex;
+    flex-direction: row;
+  }
+  #experience h3 {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+  }
+}
+@media screen and (min-width: 992px) {
+  html {
+    font-size: 120%;
+  }
+  .hire-me {
+    position: fixed;
+  }
+  main article {
+    margin-top: 5em;
+  }
+}
+
 h1,
 h2,
 h3,
@@ -92,11 +129,6 @@ h1::after {
   font-size: 0.5em;
 }
 
-#skills {
-  display: flex;
-  justify-content: center;
-}
-
 .soft-skills {
   border: 0.2rem solid black;
   width: 600px;
@@ -149,39 +181,4 @@ footer {
   );
   text-align: center;
   padding: 1rem;
-}
-
-@media print {
-  .navigation-links .hire-me {
-    display: none;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  html {
-    font-size: 80%;
-  }
-  main article {
-    margin-top: 3em;
-  }
-  .navigation-links {
-    display: flex;
-    flex-direction: row;
-  }
-  #experience h3 {
-    display: flex;
-    flex-direction: row;
-    align-items: baseline;
-  }
-}
-@media screen and (min-width: 992px) {
-  html {
-    font-size: 150%;
-  }
-  .hire-me {
-    position: fixed;
-  }
-  main article {
-    margin-top: 5em;
-  }
 }
